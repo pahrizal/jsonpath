@@ -1,4 +1,7 @@
-if (typeof yy === 'undefined' || !Object.keys(yy || {}).includes('ast')) {
-    yy.ast = _ast;
+if (typeof yy === 'undefined') {
+    var yy = {
+        ast: _ast
+    };
     _ast.initialize();
 }
+
